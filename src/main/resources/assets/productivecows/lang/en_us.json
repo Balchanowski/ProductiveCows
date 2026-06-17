@@ -1,0 +1,13 @@
+{
+  "itemGroup.productivecows": "Example Mod Tab",
+  "block.productivecows.example_block": "Example Block",
+  "item.productivecows.example_item": "Example Item",
+
+  "productivecows.configuration.title": "Productive Cows Configs",
+  "productivecows.configuration.section.productivecows.common.toml": "Productive Cows Configs",
+  "productivecows.configuration.section.productivecows.common.toml.title": "Productive Cows Configs",
+  "productivecows.configuration.items": "Item List",
+  "productivecows.configuration.logDirtBlock": "Log Dirt Block",
+  "productivecows.configuration.magicNumberIntroduction": "Magic Number Text",
+  "productivecows.configuration.magicNumber": "Magic Number"
+}
