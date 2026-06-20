@@ -1,7 +1,20 @@
 {
-  "itemGroup.productivecows": "Example Mod Tab",
-  "block.productivecows.example_block": "Example Block",
-  "item.productivecows.example_item": "Example Item",
+  "itemGroup.productivecows": "Productive Cows",
+
+  "item.productivecows.iron_milk_bucket": "Iron Milk Bucket",
+  "item.productivecows.blazerod_milk_bucket": "Blazerod Milk Bucket",
+  "item.productivecows.copper_milk_bucket": "Copper Milk Bucket",
+  "item.productivecows.diamond_milk_bucket": "Diamond Milk Bucket",
+  "item.productivecows.emerald_milk_bucket": "Emerald Milk Bucket",
+  "item.productivecows.gold_milk_bucket": "Gold Milk Bucket",
+  "item.productivecows.netheritescrap_milk_bucket": "Netherite Scrap Milk Bucket",
+  "item.productivecows.netherstar_milk_bucket": "Nether Star Milk Bucket",
+  "item.productivecows.netherwart_milk_bucket": "Nether Wart Milk Bucket",
+  "item.productivecows.obsidian_milk_bucket": "Obsidian Milk Bucket",
+  "item.productivecows.quartz_milk_bucket": "Quartz Milk Bucket",
+  "item.productivecows.redstone_milk_bucket": "Redstone Milk Bucket",
+  "item.productivecows.slime_milk_bucket": "Slime Milk Bucket",
+
 
   "productivecows.configuration.title": "Productive Cows Configs",
   "productivecows.configuration.section.productivecows.common.toml": "Productive Cows Configs",

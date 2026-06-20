@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "productivecows:item/bucket_base",
+    "layer1": "productivecows:item/bucket_fill/obsidian_milk_fill"
+  }
+}
