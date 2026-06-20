@@ -1,6 +1,7 @@
 package com.stanislaw.productivecows;
 
 import com.mojang.logging.LogUtils;
+import com.stanislaw.productivecows.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,7 +17,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
-import static com.stanislaw.productivecows.ModItems.*;
+import static com.stanislaw.productivecows.item.ModItems.*;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ProductiveCows.MODID)

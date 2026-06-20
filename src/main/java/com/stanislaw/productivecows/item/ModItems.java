@@ -1,7 +1,6 @@
-package com.stanislaw.productivecows;
+package com.stanislaw.productivecows.item;
 
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
+import com.stanislaw.productivecows.ProductiveCows;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
