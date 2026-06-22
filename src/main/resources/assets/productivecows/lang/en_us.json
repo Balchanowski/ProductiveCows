@@ -15,6 +15,9 @@
   "item.productivecows.redstone_milk_bucket": "Redstone Milk Bucket",
   "item.productivecows.slime_milk_bucket": "Slime Milk Bucket",
 
+  "entity.productivecows.productive_cow": "Iron Cow",
+  "item.productivecows.iron_cow_spawn_egg": "Iron Cow Spawn Egg",
+
 
   "productivecows.configuration.title": "Productive Cows Configs",
   "productivecows.configuration.section.productivecows.common.toml": "Productive Cows Configs",

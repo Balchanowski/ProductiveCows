@@ -1,7 +1,10 @@
 package com.stanislaw.productivecows;
 
 import com.mojang.logging.LogUtils;
+import com.stanislaw.productivecows.entity.ModEntities;
+import com.stanislaw.productivecows.entity.client.ProductiveCowRenderer;
 import com.stanislaw.productivecows.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -9,8 +12,10 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -51,6 +56,7 @@ public class ProductiveCows {
                 output.accept(QUARTZ_MILK_BUCKET.get());
                 output.accept(REDSTONE_MILK_BUCKET.get());
                 output.accept(SLIME_MILK_BUCKET.get());
+                output.accept(IRON_COW_SPAWN_EGG.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -62,6 +68,9 @@ public class ProductiveCows {
         ModItems.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
+//
+//      Rejestracja naszych entities
+        ModEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ProductiveCows) to respond directly to events.
@@ -77,5 +86,14 @@ public class ProductiveCows {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @EventBusSubscriber(modid = MODID)
+    public static class ClientModEvents{
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event){
+
+            EntityRenderers.register(ModEntities.PRODUCTIVE_COW.get(), ProductiveCowRenderer::new);
+        }
     }
 }
