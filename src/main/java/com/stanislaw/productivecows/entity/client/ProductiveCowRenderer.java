@@ -16,7 +16,7 @@ public class ProductiveCowRenderer extends MobRenderer<ProductiveCowEntity, CowM
     }
     @Override
     public ResourceLocation getTextureLocation(ProductiveCowEntity entity) {
-        return ResourceLocation.fromNamespaceAndPath(ProductiveCows.MODID, "textures/entity/productive_cow/iron_cow.png");
+        return entity.getVariant().getTexture();
     }
 
 }

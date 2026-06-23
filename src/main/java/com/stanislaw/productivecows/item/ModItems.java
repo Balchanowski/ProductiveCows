@@ -2,6 +2,7 @@ package com.stanislaw.productivecows.item;
 
 import com.stanislaw.productivecows.ProductiveCows;
 import com.stanislaw.productivecows.entity.ModEntities;
+import com.stanislaw.productivecows.entity.ProductiveCowVariant;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
 import net.neoforged.bus.api.IEventBus;
@@ -27,9 +28,10 @@ public class ModItems {
     public static final DeferredItem<Item> REDSTONE_MILK_BUCKET = ITEMS.registerSimpleItem("redstone_milk_bucket", new Item.Properties());
     public static final DeferredItem<Item> SLIME_MILK_BUCKET = ITEMS.registerSimpleItem("slime_milk_bucket", new Item.Properties());
 
-    public static final DeferredItem<Item> IRON_COW_SPAWN_EGG =  ITEMS.registerItem("iron_cow_spawn_egg",
-            properties -> new DeferredSpawnEggItem(ModEntities.PRODUCTIVE_COW, 0xFFFFFF, 0x000000, new Item.Properties()
-    ));
+    public static final DeferredItem<Item> IRON_COW_SPAWN_EGG = ITEMS.registerItem("iron_cow_spawn_egg",
+            properties -> new ProductiveCowSpawnEgg(ModEntities.PRODUCTIVE_COW, ProductiveCowVariant.IRON, 0xFFFFFF, 0x000000, properties));
+    public static final DeferredItem<Item> OBSIDIAN_COW_SPAWN_EGG =  ITEMS.registerItem("obsidian_cow_spawn_egg",
+            properties -> new ProductiveCowSpawnEgg(ModEntities.PRODUCTIVE_COW, ProductiveCowVariant.OBSIDIAN,0x100c1c, 0x8308e4, properties));
 
 
     public static void register(IEventBus eventBus) {

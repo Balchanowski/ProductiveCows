@@ -57,6 +57,7 @@ public class ProductiveCows {
                 output.accept(REDSTONE_MILK_BUCKET.get());
                 output.accept(SLIME_MILK_BUCKET.get());
                 output.accept(IRON_COW_SPAWN_EGG.get());
+                output.accept(OBSIDIAN_COW_SPAWN_EGG.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
