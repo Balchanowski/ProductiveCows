@@ -10,8 +10,13 @@ import net.minecraft.world.item.Items;
 import java.util.function.Supplier;
 
 public enum ProductiveCowVariant {
-    IRON("iron", ModItems.IRON_MILK_BUCKET, () -> Items.IRON_INGOT, false, ModItems.IRON_COW_SPAWN_EGG),
-    OBSIDIAN("obsidian", ModItems.OBSIDIAN_MILK_BUCKET, () -> Items.OBSIDIAN, false, ModItems.OBSIDIAN_COW_SPAWN_EGG);
+    IRON("iron", ModItems.IRON_MILK_BUCKET, () -> Items.IRON_BLOCK, false, ModItems.IRON_COW_SPAWN_EGG),
+    OBSIDIAN("obsidian", ModItems.OBSIDIAN_MILK_BUCKET, () -> Items.OBSIDIAN, false, ModItems.OBSIDIAN_COW_SPAWN_EGG),
+    EMERALD("emerald", ModItems.EMERALD_MILK_BUCKET, () -> Items.EMERALD_BLOCK, false, ModItems.EMERALD_COW_SPAWN_EGG),
+    GOLD("gold", ModItems.GOLD_MILK_BUCKET, () -> Items.GOLD_BLOCK, false, ModItems.GOLD_COW_SPAWN_EGG),
+    DIAMOND("diamond", ModItems.DIAMOND_MILK_BUCKET, () -> Items.DIAMOND_BLOCK, false, ModItems.DIAMOND_COW_SPAWN_EGG);
+
+
     private final String id;
     private final Supplier<? extends Item> bucket_id;
     private final boolean isOnWorldSpawn;

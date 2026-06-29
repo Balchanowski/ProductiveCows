@@ -18,6 +18,9 @@
   "entity.productivecows.productive_cow": "Productive Cow",
   "item.productivecows.iron_cow_spawn_egg": "Iron Cow Spawn Egg",
   "item.productivecows.obsidian_cow_spawn_egg": "Obsidian Cow Spawn Egg",
+  "item.productivecows.emerald_cow_spawn_egg": "Emerald Cow Spawn Egg",
+  "item.productivecows.gold_cow_spawn_egg": "Gold Cow Spawn Egg",
+  "item.productivecows.diamond_cow_spawn_egg": "Diamond Cow Spawn Egg",
 
 
   "productivecows.configuration.title": "Productive Cows Configs",

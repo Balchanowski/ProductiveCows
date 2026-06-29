@@ -32,6 +32,14 @@ public class ModItems {
             properties -> new ProductiveCowSpawnEgg(ModEntities.PRODUCTIVE_COW, ProductiveCowVariant.IRON, 0xFFFFFF, 0x000000, properties));
     public static final DeferredItem<Item> OBSIDIAN_COW_SPAWN_EGG =  ITEMS.registerItem("obsidian_cow_spawn_egg",
             properties -> new ProductiveCowSpawnEgg(ModEntities.PRODUCTIVE_COW, ProductiveCowVariant.OBSIDIAN,0x100c1c, 0x8308e4, properties));
+    public static final DeferredItem<Item> EMERALD_COW_SPAWN_EGG =  ITEMS.registerItem("emerald_cow_spawn_egg",
+            properties -> new ProductiveCowSpawnEgg(ModEntities.PRODUCTIVE_COW, ProductiveCowVariant.EMERALD,0x1aae35, 0x82f6ad, properties));
+    public static final DeferredItem<Item> GOLD_COW_SPAWN_EGG =  ITEMS.registerItem("gold_cow_spawn_egg",
+            properties -> new ProductiveCowSpawnEgg(ModEntities.PRODUCTIVE_COW, ProductiveCowVariant.GOLD,0xfffd90, 0xae6d26, properties));
+
+    public static final DeferredItem<Item> DIAMOND_COW_SPAWN_EGG =  ITEMS.registerItem("diamond_cow_spawn_egg",
+            properties -> new ProductiveCowSpawnEgg(ModEntities.PRODUCTIVE_COW, ProductiveCowVariant.DIAMOND,0x9efeeb, 0x1ed0d6, properties));
+
 
 
     public static void register(IEventBus eventBus) {

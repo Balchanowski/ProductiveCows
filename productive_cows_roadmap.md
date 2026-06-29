@@ -52,6 +52,7 @@ Dlaczego B, a nie osobna klasa na krowę:
 - [ ] Block + block entity (logika ticka)
 - [ ] Proste GUI / menu (kontener)
 - [ ] System receptury: mleko → materiał (np. iron milk → sztabka żelaza) + śmietanka (produkt uboczny)
+- [ ] Stacja paszowa (zautomatyzowana) — droższy wariant stołu paszowego, auto-pobieranie paszy z sąsiednich inwentarzy/rur, bez ręcznego wkładania. WCHODZI po tym, jak podstawowy stół paszowy działa ręcznie.
 
 > To jest Twój punkt 9. Tu mod przestaje być „zestawem itemów", a staje się mechaniką.
 
